@@ -1,0 +1,15 @@
+.card__caption-like {
+  border: none;
+  width: 22px;
+  height: 19px;
+  background-color: transparent;
+  background-image: url("../../../images/like.svg");
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 0;
+  cursor: pointer;
+}
+
+.card__caption-like:hover {
+  opacity: 0.5;
+}

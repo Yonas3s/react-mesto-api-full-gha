@@ -1,0 +1,6 @@
+.header__email-container {
+    height: 22px;
+    width: 221px;
+    display: flex;
+    justify-content: space-between;
+}

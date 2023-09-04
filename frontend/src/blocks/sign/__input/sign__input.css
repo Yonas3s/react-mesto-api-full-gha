@@ -1,0 +1,22 @@
+.sign__input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 0;
+    font-family: "Inter", ‘Arial’, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 40px;
+    background-color: black;
+    color: white;
+}
+
+.sign__input:nth-child(2) {
+    margin-top: 16px;
+}
+
+.sign__input:focus {
+    border: none;
+    border-bottom: 3px solid rgb(148, 148, 148);
+}

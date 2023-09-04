@@ -1,0 +1,13 @@
+.popup_opened {
+  visibility: visible;
+  animation: animated 1s;
+}
+
+@keyframes animated {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

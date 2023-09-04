@@ -1,0 +1,31 @@
+.profile__person-job {
+  margin-left: 30px;
+  margin-top: -40px;
+  font-family: "Inter", ‘Arial’, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 336px;
+  grid-row: 2;
+  grid-column: 2;
+}
+
+@media screen and (max-width: 1000px) {
+  .profile__person-job {
+    grid-row: 3;
+    grid-column: 1;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 282px;
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,9 @@
+.popup__btn-form_inactive {
+  color: #000000;
+  border: 1px solid #000000;
+  opacity: 0.2;
+  background: none;
+}
+.popup__btn-form_inactive:hover {
+  opacity: 0.2;
+}

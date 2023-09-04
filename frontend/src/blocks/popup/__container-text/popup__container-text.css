@@ -1,0 +1,12 @@
+.popup__container-text {
+    color: black;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 900;
+    margin-bottom: 60px;
+    width: 358px;
+    margin-left: auto;
+    margin-right: auto;
+    /* height: 58px;
+    text-align: center; */
+}

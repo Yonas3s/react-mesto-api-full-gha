@@ -1,0 +1,31 @@
+.popup__btn-form {
+  padding: 0;
+  border-radius: 2px;
+  color: #ffffff;
+  width: 358px;
+  margin-top: 10px;
+  font-family: "Inter", ‘Arial’, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 50px;
+  text-align: center;
+  border: none;
+  margin-bottom: 37px;
+  cursor: pointer;
+  background: #000000;
+}
+
+.popup__btn-form:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 500px) {
+  .popup__btn-form {
+    max-width: 238px;
+    line-height: 46px;
+    margin-left: 22px;
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+}

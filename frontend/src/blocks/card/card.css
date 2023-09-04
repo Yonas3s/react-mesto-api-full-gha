@@ -1,0 +1,17 @@
+.card {
+  width: 282px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: #000000;
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

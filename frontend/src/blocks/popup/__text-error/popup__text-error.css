@@ -1,0 +1,16 @@
+.popup__text-error {
+  padding: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ff0000;
+  /* opacity: 0; */
+  height: 30px;
+  max-width: 358px;
+  margin-left: 36px;
+  margin-bottom: 0;
+  margin-top: 5px;
+  z-index: 30;
+}

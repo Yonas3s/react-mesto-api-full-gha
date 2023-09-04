@@ -1,0 +1,8 @@
+.popup__input-container {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  width: 430px;
+}
