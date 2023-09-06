@@ -40,7 +40,7 @@ app.get('/crash-test', () => {
   }, 0);
 });
 
-app.use('/api/', require('./routes/index'));
+app.use('/', require('./routes/index'));
 
 app.use(errorLogger);
 
