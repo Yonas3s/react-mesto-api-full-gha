@@ -97,7 +97,7 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: "http://localhost:3000",
+  baseUrl: "https://yonasssproject.nomoredomainsicu.ru/api/",
 });
 
 export default api;
