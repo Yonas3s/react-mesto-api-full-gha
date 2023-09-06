@@ -1,4 +1,4 @@
-const baseUrl = 'https://yonasssproject.nomoredomainsicu.ru/api';
+const baseUrl = 'https://api.yonasssproject.nomoredomainsicu.ru';
 
 function getResponseData(res) {
   return res.ok ? res.json() : Promise.reject(`${res.status} ${res.statusText}`)
