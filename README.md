@@ -5,11 +5,11 @@
   
 Пожалуйста, прикрепите в это описание ссылку на сайт, размещенный на Яндекс.Облаке.
 
-Адрес репозитория: https://github.com/...
+Адрес репозитория: https://github.com/Yonas3s/react-mesto-api-full-gha
 
 ## Ссылки на проект
 
-IP-адрес 158.160.6.137
+IP-адрес 84.201.142.191
 
 Frontend https://yonasssproject.nomoredomainsicu.ru
 
