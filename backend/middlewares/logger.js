@@ -15,4 +15,4 @@ const errorLogger = expressWinston.errorLogger({
   format: winston.format.json(),
 });
 
-module.exports = { requestLogger, errorLogger }
+module.exports = { requestLogger, errorLogger };
