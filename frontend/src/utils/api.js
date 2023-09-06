@@ -97,7 +97,7 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: "https://yonasssproject.nomoredomainsicu.ru/api/",
+  baseUrl: "https://yonasssproject.nomoredomainsicu.ru/api",
 });
 
 export default api;
