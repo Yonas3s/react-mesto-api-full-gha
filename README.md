@@ -9,7 +9,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 84.201.142.191
+IP 84.201.142.191
 
 Frontend https://yonasssproject.nomoredomainsicu.ru
 
