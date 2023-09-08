@@ -48,18 +48,26 @@ module.exports.deleteCard = (req, res, next) => {
           res.status(HTTP_STATUS_OK).send({ message: 'Карточка удалена.' });
         })
         .catch((err) => {
+          // if (err instanceof mongoose.Error.DocumentNotFoundError) {
+          //   next(new NotFoundStatus('Карточка с указанным _id не найдена.'));
+          // } else if (err instanceof mongoose.Error.CastError) {
+          //   next(new BadRequestStatus('Некорректный _id карточки.'));
+          // } else {
+          //   next(err);
+          // }
           if (err instanceof mongoose.Error.DocumentNotFoundError) {
             next(new NotFoundStatus('Карточка с указанным _id не найдена.'));
-          } else if (err instanceof mongoose.Error.CastError) {
-            next(new BadRequestStatus('Некорректный _id карточки.'));
           } else {
             next(err);
           }
         });
     })
     .catch((err) => {
-      if (err.name === 'TypeError') {
-        next(new NotFoundStatus('Карточка с указанным _id не найдена.'));
+      // if (err.name === 'TypeError') {
+      //   next(new NotFoundStatus('Карточка с указанным _id не найдена.'));
+      // }
+      if (err instanceof mongoose.Error.CastError) {
+        next(new BadRequestStatus('Некорректный _id карточки.'));
       } else {
         next(err);
       }
@@ -68,8 +76,8 @@ module.exports.deleteCard = (req, res, next) => {
 
 module.exports.likeCard = (req, res, next) => {
   Card.findByIdAndUpdate(req.params.cardId, { $addToSet: { likes: req.user._id } }, { new: true })
-  .orFail(new NotValidIdStatus('NotValidId'))
-  .then((card) => {
+    .orFail(new NotValidIdStatus('NotValidId'))
+    .then((card) => {
       res.status(HTTP_STATUS_OK).send(card);
     })
     .catch((err) => {
