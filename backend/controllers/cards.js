@@ -4,6 +4,7 @@ const Card = require('../models/card');
 const BadRequestStatus = require('../errors/BadRequestStatus');
 const NotFoundStatus = require('../errors/NotFoundStatus');
 const ForbiddenStatus = require('../errors/ForbiddenStatus');
+const NotValidIdStatus = require('../errors/NotValidIdStatus');
 
 module.exports.getCards = (req, res, next) => {
   Card.find({})
@@ -67,8 +68,8 @@ module.exports.deleteCard = (req, res, next) => {
 
 module.exports.likeCard = (req, res, next) => {
   Card.findByIdAndUpdate(req.params.cardId, { $addToSet: { likes: req.user._id } }, { new: true })
-    .orFail(new Error('NotValidId'))
-    .then((card) => {
+  .orFail(new NotValidIdStatus('NotValidId'))
+  .then((card) => {
       res.status(HTTP_STATUS_OK).send(card);
     })
     .catch((err) => {
@@ -84,7 +85,7 @@ module.exports.likeCard = (req, res, next) => {
 
 module.exports.dislikeCard = (req, res, next) => {
   Card.findByIdAndUpdate(req.params.cardId, { $pull: { likes: req.user._id } }, { new: true })
-    .orFail(new Error('NotValidId'))
+    .orFail(new NotValidIdStatus('NotValidId'))
     .then((card) => {
       res.status(HTTP_STATUS_OK).send(card);
     })
