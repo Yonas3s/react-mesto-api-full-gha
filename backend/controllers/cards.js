@@ -4,7 +4,6 @@ const Card = require('../models/card');
 const BadRequestStatus = require('../errors/BadRequestStatus');
 const NotFoundStatus = require('../errors/NotFoundStatus');
 const ForbiddenStatus = require('../errors/ForbiddenStatus');
-const NotValidIdStatus = require('../errors/NotValidIdStatus');
 
 module.exports.getCards = (req, res, next) => {
   Card.find({})
